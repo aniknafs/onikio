@@ -1,16 +1,19 @@
 'use strict';
 
 angular.module('onikioApp', [
-  'onikioApp.constants',
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
-  'ui.router',
-  'ui.bootstrap'
-])
-  .config(function($urlRouterProvider, $locationProvider) {
-    $urlRouterProvider
-      .otherwise('/');
+        'onikioApp.constants',
+        'ngCookies',
+        'ngResource',
+        'ngSanitize',
+        'ui.router',
+        'ui.bootstrap',
+        'ngAnimate',
+        'ngMaterial'
+        // 'ngMdIcons'
+    ])
+    .config(function($urlRouterProvider, $locationProvider) {
+        $urlRouterProvider
+            .otherwise('/');
 
-    $locationProvider.html5Mode(true);
-  });
+        $locationProvider.html5Mode(true);
+    });
