@@ -2,19 +2,19 @@
 
 (function() {
 
-class MainController {
+    class MainController {
 
-  constructor($http) {
-    this.$http = $http;
-    this.awesomeThings = [];
+        constructor($http) {
+            this.$http = $http;
+            this.awesomeThings = [];
 
-    $http.get('/api/things').then(response => {
-      this.awesomeThings = response.data;
-    });
-  }
-}
+            $http.get('/api/things').then(response => {
+                this.awesomeThings = response.data;
+            });
+        }
+    }
 
-angular.module('onikioApp')
-  .controller('MainController', MainController);
+    angular.module('onikioApp')
+        .controller('MainController', MainController);
 
 })();

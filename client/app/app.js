@@ -8,7 +8,8 @@ angular.module('onikioApp', [
         'ui.router',
         'ui.bootstrap',
         'ngAnimate',
-        'ngMaterial'
+        'ngMaterial',
+        'vcRecaptcha'
         // 'ngMdIcons'
     ])
     .config(function($urlRouterProvider, $locationProvider) {
